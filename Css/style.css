@@ -6,9 +6,10 @@ background: #F2F2F2;
 }
 /* 1er section*/
 .Hero{
+display:flex;
+flex-direction:column;
 max-width: 1280px;
 height: 599px;
-text-align: center;
 padding: 50px;
 background-image:linear-gradient(0deg, rgba(39, 32, 32, 0.5), rgb(32, 28, 28)), url("../images/hero.png");
 background-size: cover;
@@ -16,6 +17,7 @@ background-repeat: no-repeat;
 background-position: center;
 font-family: 'Inter';
 font-style: normal;
+justify-content:space-between;
 }
 
 
@@ -100,47 +102,42 @@ height: 29px;
 
 /* Style de Apprenez chez nous*/
 .hero-container h2{
-  text-align: center;
   font-weight: 800;
   font-size: 64px;
   line-height: 77px;
-  width: 672px;
-  height: 154px;
- padding-left: 300px;
+  text-align: center;
   color: #FFFFFF;
+  
+
 }
 
 /*barre de recherche*/
-.Recherche{
-  width: 714px;
-  height: 49px;
-  margin-left:30%;
+.recherche{
   display: flex;
-  padding-top: 100px;
-  
+  justify-content: center;
 }
 .recherche form{
   display:flex;
+  gap:20px;
 }
 input[type="submit"]{
-  width: 174px;
-  height: 49px;
   padding-left: 20px;
   color: white;
   background-color: #f57905;
+  padding:10px 19px;
+  border-radius: 8px;
  
-
 }
 input[type="submit"]:hover{
   background:#E36D00;
 }
-input[type="search"] {
-  width: 400px;
-  height: 49px;
+input[type="search"] { 
   background-color: #FFFFFF;
   color: #0E0E0E;
   opacity: 1;
   border-radius: 10px;
+  width: 100%;
+  padding:10px 140px;
 
 }
 
@@ -149,7 +146,10 @@ input[type="search"] {
   max-width: 1200px;
   height: 523px;
   padding-left: 40px;
-  display:flexbox;
+  display:flex;
+  flex-direction: column;
+  font-family: 'Inter';
+  font-style: normal;
 
   }
 hr{
@@ -163,18 +163,18 @@ hr{
 .about-container{
   display:flex;
   justify-content: space-between;
-  
+}
+.about-container .left{
+  display:flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 .about-us h2{
-  height: 29px;
-  font-family: 'Inter';
-  font-style: normal;
   font-weight: 700;
   font-size: 24px;
   line-height: 29px;
   color: #000000;
-  margin-left: 20px;
-  margin-top: 40px;}
+  }
 
 .img img{
   
@@ -185,14 +185,9 @@ hr{
 }
 
 .about-us p{
-    
-  font-family: 'Inter';
-  font-style: normal;
   font-weight: 400;
   font-size: 16px;
   line-height: 35px;
-
-    
   color: #000000;}
 
   .bouton{
@@ -319,26 +314,23 @@ color: #000000;
   display:flex;
   flex-direction: column;
   justify-content: space-between;
+  font-family: 'Inter';
+  font-style: normal;
 }
 .teacher h2{
-font-family: 'Inter';
-font-style: normal;
 font-weight: 700;
 font-size: 24px;
 line-height: 29px;
 }
 
-.teacher-contain{
+.teacher-right{
   width: 508px;
   height: 361px;
-  display: block;
+  display: flex;
+  flex-direction: column;
   justify-content: space-between;
   align-items: center;
   background-color: #FFFFFF;
-}
-.teacher-right{
-  display: flex;
-  justify-content: space-around;
 }
 .img-teacher img{
   width: 590px;
@@ -348,16 +340,17 @@ line-height: 29px;
   border-radius: 15px;
 
 }
-.teacher-contain button{
-  width: 194px;
-  height: 56.08px;
-  display: flex;
-  flex-direction: column;
+.teacher-contain{
+  display:flex;
+  justify-content:space-between;
+}
+.teacher-right .Rejoignez-nous {
   align-items: center;
-  padding: 13px 10px;
-  color:black;
+  padding: 10px 17px;
+  color:#E36D00;
   border: 1px solid #E36D00;
-  background-color: #FFFFFF;
+  background-color:#FFFFFF;
+  border-radius: 10px;
 }
 /*section icons*/
 .icons{
